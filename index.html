@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Zuluaga | Developer & AI Builder</title>
+    <meta name="description"
+        content="Portfolio of Daniel Zuluaga - Developer & AI Builder. Flagship project: AI Workers, a platform for shipping business AI agents to production.">
+    <meta property="og:title" content="Daniel Zuluaga | Developer & AI Builder">
+    <meta property="og:description"
+        content="I build AI products that ship. Flagship project: AI Workers - Customer Service AI Worker on WhatsApp.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Inline SVG icon sprite (no external icon dependency) -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 6h18v12H3z M3 7l9 6 9-6"/></symbol>
+        <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM10 9.75h3.8v1.6h.06c.53-1 1.83-1.95 3.77-1.95 4.03 0 4.77 2.55 4.77 5.87V21h-4v-5.1c0-1.22-.02-2.78-1.8-2.78-1.8 0-2.08 1.32-2.08 2.7V21h-4z"/></symbol>
+        <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z M9.2 8.4c-.4.6-.4 1.6.6 3.2s2.4 2.6 3.6 3c.8.3 1.4-.1 1.8-.7l-1.6-1-.8.6c-.9-.4-1.7-1.2-2.1-2l.6-.8-1-1.6z"/></symbol>
+        <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.35 1.08 2.92.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.5 9.5 0 0 1 12 6.8c.85 0 1.71.11 2.51.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+        <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6z M9 12l2 2 4-4"/></symbol>
+        <symbol id="i-layers" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3l9 5-9 5-9-5z M3 13l9 5 9-5 M3 17l9 5 9-5" transform="scale(1 .9) translate(0 .8)"/></symbol>
+        <symbol id="i-sliders" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M4 7h10M18 7h2M4 17h2M10 17h10M14 4v6M6 14v6"/></symbol>
+        <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 5h16v11H9l-5 4z"/></symbol>
+        <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 12l5 5L20 6"/></symbol>
+        <symbol id="i-box" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3l8 4.5v9L12 21l-8-4.5v-9z M4 7.5L12 12l8-4.5 M12 12v9"/></symbol>
+    </svg>
+
+    <div class="background-glow"></div>
+
+    <header class="navbar">
+        <a class="logo" href="#home" aria-label="Daniel Zuluaga - home">DZ</a>
+        <nav aria-label="Main">
+            <ul>
+                <li><a href="#flagship" data-i18n="nav.flagship">Flagship</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="lang-toggle" role="group" aria-label="Language">
+            <button type="button" data-lang="en" aria-pressed="true">EN</button>
+            <button type="button" data-lang="es" aria-pressed="false">ES</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <span class="chip"><span class="dot"></span><span data-i18n="hero.chip">Open to 100% remote roles</span></span>
+                <h1>Daniel Zuluaga Vélez</h1>
+                <p class="subtitle" data-i18n="hero.role">Developer &amp; AI Builder</p>
+                <p class="tagline" data-i18n="hero.tagline">I build AI products that ship.</p>
+                <p class="bio" data-i18n="hero.bio1">I turn business problems into working software. After 6+ years in business management and key account strategy, I now build AI agents and full-stack products end to end, using AI-assisted coding with real testing and production discipline.</p>
+                <p class="bio" data-i18n="hero.bio2">My flagship project, AI Workers, is a platform for shipping reusable business AI agents to production, starting with a Customer Service Worker that runs on WhatsApp.</p>
+                <div class="cta-buttons">
+                    <a href="#flagship" class="btn primary"><span data-i18n="hero.cta1">See the flagship project</span><svg class="ico"><use href="#i-arrow" /></svg></a>
+                    <a href="#contact" class="btn secondary" data-i18n="hero.cta2">Contact me</a>
+                </div>
+                <ul class="stats">
+                    <li><strong>6+</strong><span data-i18n="stats.1">years in business &amp; key accounts</span></li>
+                    <li><strong data-i18n="stats.2n">Meta-verified</strong><span data-i18n="stats.2">WhatsApp Tech Provider app</span></li>
+                    <li><strong>EN · ES</strong><span data-i18n="stats.3">bilingual, remote-ready</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- FLAGSHIP -->
+        <section id="flagship" class="flagship-section">
+            <div class="section-header">
+                <h2 data-i18n="flag.h2">Flagship Project</h2>
+                <div class="underline"></div>
+            </div>
+
+            <article class="flagship-card">
+                <div class="flagship-main">
+                    <span class="eyebrow" data-i18n="flag.eyebrow">Flagship · ZUVEL</span>
+                    <h3>AI Workers</h3>
+                    <p class="flagship-sub" data-i18n="flag.sub">Customer Service AI Worker</p>
+                    <p class="flagship-desc" data-i18n="flag.desc">A platform for shipping reusable business AI agents to production. The Customer Service Worker is a finished, ready-to-use product on WhatsApp: it answers customers, books rooms and appointments, opens claims for review, and hands off to a human whenever needed. It is generic by design, so it can be deployed in any business, and it has already been implemented for a hotel.</p>
+                    <div class="tags">
+                        <span>Next.js</span><span>TypeScript</span><span>Python · FastAPI</span><span>OpenAI Agents SDK</span><span>Supabase</span><span>WhatsApp Cloud API</span>
+                    </div>
+                    <div class="project-links">
+                        <a class="link-btn" href="https://www.zuvel.ai" target="_blank" rel="noopener"><svg class="ico"><use href="#i-arrow" /></svg><span data-i18n="flag.link1">Visit zuvel.ai</span></a>
+                        <a class="link-btn" href="#contact"><svg class="ico"><use href="#i-mail" /></svg><span data-i18n="flag.link2">Request a walkthrough</span></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Interactive demo -->
+            <div class="demo" id="demo">
+                <div class="demo-head">
+                    <div>
+                        <h4 data-i18n="demo.h">See the worker in action</h4>
+                        <p class="demo-note" data-i18n="demo.note">Simulated conversations that mirror how the worker behaves. Watch the agent trace on the right.</p>
+                    </div>
+                    <div class="demo-tabs" role="tablist" aria-label="Demo scenarios">
+                        <button type="button" role="tab" class="active" data-scn="booking" aria-selected="true" data-i18n="demo.t1">Room booking</button>
+                        <button type="button" role="tab" data-scn="appointment" aria-selected="false" data-i18n="demo.t2">Appointment</button>
+                        <button type="button" role="tab" data-scn="claim" aria-selected="false" data-i18n="demo.t3">Return &amp; claim</button>
+                    </div>
+                </div>
+                <div class="demo-body">
+                    <div class="phone" aria-live="polite">
+                        <div class="phone-top">
+                            <div class="avatar">AI</div>
+                            <div>
+                                <strong id="phoneName">Hotel Concierge</strong>
+                                <small data-i18n="demo.online">AI Worker · online</small>
+                            </div>
+                        </div>
+                        <div class="chat" id="chat"></div>
+                    </div>
+                    <div class="trace">
+                        <div class="trace-head">
+                            <strong data-i18n="demo.trace">Agent trace</strong>
+                            <button type="button" id="replay" class="mini-btn" data-i18n="demo.replay">Replay</button>
+                        </div>
+                        <ol id="traceList"></ol>
+                        <p class="trace-empty" id="traceEmpty" data-i18n="demo.traceEmpty">Tool calls, policy checks and handoffs appear here as the conversation runs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Engineering decisions -->
+            <div class="sub-header">
+                <h4 data-i18n="dec.h">Engineering decisions behind it</h4>
+            </div>
+            <div class="decisions">
+                <div class="decision">
+                    <svg class="ico"><use href="#i-chat" /></svg>
+                    <h5 data-i18n="dec.1t">Human handoff is mandatory</h5>
+                    <p data-i18n="dec.1">Every conversation can escalate to a person with the full context attached. The agent knows what it should not decide.</p>
+                </div>
+                <div class="decision">
+                    <svg class="ico"><use href="#i-shield" /></svg>
+                    <h5 data-i18n="dec.2t">Tenant isolation</h5>
+                    <p data-i18n="dec.2">Each business's data, configuration and conversations are isolated, so one worker can safely serve many clients.</p>
+                </div>
+                <div class="decision">
+                    <svg class="ico"><use href="#i-sliders" /></svg>
+                    <h5 data-i18n="dec.3t">Private Control Plane</h5>
+                    <p data-i18n="dec.3">A private control plane to configure each deployment and review conversations, kept apart from the customer-facing runtime.</p>
+                </div>
+                <div class="decision">
+                    <svg class="ico"><use href="#i-layers" /></svg>
+                    <h5 data-i18n="dec.4t">WhatsApp-first, direct to Meta</h5>
+                    <p data-i18n="dec.4">Built on the Meta WhatsApp Cloud API with Embedded Signup, behind an internal WhatsAppProvider and a template registry.</p>
+                </div>
+                <div class="decision">
+                    <svg class="ico"><use href="#i-check" /></svg>
+                    <h5 data-i18n="dec.5t">Safe scope by design</h5>
+                    <p data-i18n="dec.5">Returns &amp; Claims only collects evidence and opens cases for human review. Appointments re-check availability right before confirming.</p>
+                </div>
+                <div class="decision">
+                    <svg class="ico"><use href="#i-box" /></svg>
+                    <h5 data-i18n="dec.6t">Generic core, custom on top</h5>
+                    <p data-i18n="dec.6">Standardized products for speed, plus custom development for specialized needs, from one reusable platform.</p>
+                </div>
+            </div>
+
+            <!-- Architecture -->
+            <div class="sub-header">
+                <h4 data-i18n="arch.h">How a message flows</h4>
+            </div>
+            <div class="flow" aria-label="Architecture flow">
+                <div class="node"><strong data-i18n="arch.1">Customer</strong><small>WhatsApp</small></div>
+                <span class="arrow" aria-hidden="true">→</span>
+                <div class="node"><strong>Meta Cloud API</strong><small>Embedded Signup</small></div>
+                <span class="arrow" aria-hidden="true">→</span>
+                <div class="node"><strong>FastAPI</strong><small>OpenAI Agents SDK</small></div>
+                <span class="arrow" aria-hidden="true">→</span>
+                <div class="node"><strong>Supabase</strong><small data-i18n="arch.4">tenant-isolated data</small></div>
+                <span class="arrow" aria-hidden="true">→</span>
+                <div class="node accent"><strong data-i18n="arch.5">Human handoff</strong><small>Control Plane</small></div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="skills-section">
+            <div class="section-header">
+                <h2 data-i18n="skills.h2">Technical Skills</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="skills-groups">
+                <div class="skill-group">
+                    <h5 data-i18n="skills.g1">AI &amp; Agents</h5>
+                    <div class="tags"><span>OpenAI Agents SDK</span><span>Agent design</span><span>n8n automation</span><span>WhatsApp Cloud API</span></div>
+                </div>
+                <div class="skill-group">
+                    <h5 data-i18n="skills.g2">Full-stack</h5>
+                    <div class="tags"><span>Next.js</span><span>TypeScript</span><span>Python · FastAPI</span><span>Supabase · PostgreSQL</span></div>
+                </div>
+                <div class="skill-group">
+                    <h5 data-i18n="skills.g3">Workflow</h5>
+                    <div class="tags"><span>Claude Code</span><span>Codex CLI</span><span>Test-driven development</span><span>Hostinger · NGINX</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact-section">
+            <div class="section-header">
+                <h2 data-i18n="contact.h2">Let's build something</h2>
+                <div class="underline"></div>
+            </div>
+            <p data-i18n="contact.p">Open to remote developer and AI engineering roles. If you want to see AI Workers in action or talk about your team, reach out.</p>
+            <div class="contact-links">
+                <a href="mailto:danzuluagav@gmail.com" class="contact-btn"><svg class="ico"><use href="#i-mail" /></svg> danzuluagav@gmail.com</a>
+                <a href="https://www.linkedin.com/in/danzuluagav/" target="_blank" rel="noopener" class="contact-btn"><svg class="ico"><use href="#i-linkedin" /></svg> LinkedIn</a>
+                <a href="https://github.com/danzulu" target="_blank" rel="noopener" class="contact-btn"><svg class="ico"><use href="#i-github" /></svg> GitHub</a>
+                <a href="https://wa.me/573103538756" target="_blank" rel="noopener" class="contact-btn"><svg class="ico"><use href="#i-whatsapp" /></svg> <span data-i18n="contact.wa">Chat on WhatsApp</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Daniel Zuluaga Vélez. <span data-i18n="footer">All rights reserved.</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
