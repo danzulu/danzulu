@@ -56,7 +56,7 @@ const ES = {
     'arch.5': 'Escalamiento inteligente',
 
 
-    'web.h2': 'Más proyectos',
+    'web.h2': 'Otro proyecto',
     'web.eyebrow': 'Sitio corporativo · zuvel.ai',
     'web.sub': 'Diseñado, construido y desplegado por mí',
     'web.desc': 'El sitio corporativo de ZUVEL: una app en Next.js que corre en un VPS que configuré desde cero, detrás de Cloudflare, con HTTPS automatizado e indexación en buscadores.',
