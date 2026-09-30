@@ -62,6 +62,10 @@ const ES = {
     'web.hl.2': "SSL automatizado con Let's Encrypt y Certbot",
     'web.hl.3': 'DNS, CDN y proxy de Cloudflare delante de Nginx',
     'web.hl.4': 'SEO e indexación en Google y Bing',
+    'web.sc.1': 'Rendimiento',
+    'web.sc.2': 'Accesibilidad',
+    'web.sc.3': 'Buenas prácticas',
+    'web.sc.note': 'Lighthouse con PageSpeed Insights en escritorio, sep. 2026. En móvil: 95 en rendimiento y 100 en el resto.',
     'web.role': 'Mi rol',
     'web.link': 'Visitar zuvel.ai',
 
