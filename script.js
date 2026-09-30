@@ -21,7 +21,7 @@ const ES = {
     'flag.h2': 'Proyecto insignia',
     'flag.eyebrow': 'Insignia · ZUVEL',
     'flag.sub': 'AI Worker de Servicio al Cliente',
-    'flag.desc': 'Una plataforma para llevar a producción agentes de IA reutilizables para empresas. El Worker de Servicio al Cliente es un producto terminado y listo para usar en WhatsApp: atiende clientes, reserva habitaciones y citas, abre reclamos para revisión y pasa a una persona cuando hace falta. Es genérico por diseño, así que se puede implementar en cualquier negocio, y ya fue implementado para un hotel.',
+    'flag.desc': 'Una plataforma para llevar a producción agentes de IA reutilizables para empresas. El Worker de Servicio al Cliente es un producto terminado y listo para usar en WhatsApp: atiende clientes, reserva habitaciones y citas, resuelve devoluciones y reclamos, y escala a una persona solo cuando realmente hace falta. Es genérico por diseño, así que se puede implementar en cualquier negocio, y ya fue implementado para un hotel.',
     'flag.link1': 'Visitar zuvel.ai',
     'flag.link2': 'Solicitar una demo guiada',
 
@@ -36,8 +36,8 @@ const ES = {
     'demo.traceEmpty': 'Las llamadas a herramientas, validaciones de políticas y acciones aparecen aquí mientras corre la conversación.',
 
     'dec.h': 'Decisiones de ingeniería detrás del producto',
-    'dec.1t': 'El traspaso a una persona es obligatorio',
-    'dec.1': 'Toda conversación puede escalar a una persona con el contexto completo. El agente sabe qué no le corresponde decidir.',
+    'dec.1t': 'Escala solo cuando realmente hace falta',
+    'dec.1': 'El agente resuelve las solicitudes de principio a fin dentro de las políticas del negocio. Solo lo que queda por fuera pasa a una persona, con el contexto completo.',
     'dec.2t': 'Aislamiento por tenant',
     'dec.2': 'Los datos, la configuración y las conversaciones de cada negocio están aislados, así un mismo worker atiende a muchos clientes con seguridad.',
     'dec.3t': 'Control Plane privado',
@@ -45,14 +45,14 @@ const ES = {
     'dec.4t': 'WhatsApp primero, directo con Meta',
     'dec.4': 'Construido sobre la WhatsApp Cloud API de Meta con Embedded Signup, detrás de un WhatsAppProvider interno y un registro de plantillas.',
     'dec.5t': 'Alcance seguro por diseño',
-    'dec.5': 'Devoluciones y Reclamos solo recopila evidencia y abre casos para revisión humana. Las citas revalidan la disponibilidad justo antes de confirmar.',
+    'dec.5': 'Devoluciones y Reclamos valida la evidencia contra la política de devoluciones antes de aprobar. Las citas revalidan la disponibilidad justo antes de confirmar.',
     'dec.6t': 'Núcleo genérico, a medida encima',
     'dec.6': 'Productos estandarizados para ir rápido, más desarrollo a medida para necesidades especializadas, todo desde una plataforma reutilizable.',
 
     'arch.h': 'Cómo fluye un mensaje',
     'arch.1': 'Cliente',
     'arch.4': 'datos aislados por tenant',
-    'arch.5': 'Traspaso a humano',
+    'arch.5': 'Escalamiento inteligente',
 
 
     'skills.h2': 'Habilidades técnicas',
