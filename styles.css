@@ -755,6 +755,61 @@ section {
     font-size: 1.3rem;
 }
 
+/* ZUVEL Website */
+.project-card {
+    background: linear-gradient(135deg, rgba(74, 222, 128, 0.08), var(--card-bg) 55%);
+    border-color: var(--line);
+    box-shadow: none;
+}
+
+.role {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.role .tags {
+    margin-bottom: 0;
+}
+
+.role-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.sub-note {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    max-width: 820px;
+    margin-top: 0.4rem;
+}
+
+.highlights {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap: 0.8rem 1.5rem;
+}
+
+.highlights li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    color: var(--text-secondary);
+}
+
+.highlights .ico {
+    color: var(--green);
+    margin-top: 0.3em;
+}
+
+.project-section .skills-groups {
+    max-width: 1100px;
+}
+
 /* Skills */
 .skills-groups {
     display: grid;
