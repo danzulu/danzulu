@@ -196,70 +196,28 @@
                 <span class="eyebrow" data-i18n="web.eyebrow">Corporate website · zuvel.ai</span>
                 <h3>ZUVEL Website</h3>
                 <p class="flagship-sub" data-i18n="web.sub">Designed, built and deployed by me</p>
-                <p class="flagship-desc" data-i18n="web.desc">ZUVEL's corporate website, built as a modern, production-optimized web app and deployed on infrastructure I set up and run myself: a VPS configured from scratch, fronted by Cloudflare, with automated HTTPS and search engine indexing.</p>
-                <div class="role">
-                    <span class="role-label" data-i18n="web.role">My role</span>
-                    <div class="tags"><span>Full-Stack Development</span><span>DevOps</span><span>Deployment</span></div>
+                <p class="flagship-desc" data-i18n="web.desc">ZUVEL's corporate website: a Next.js app running on a VPS I set up from scratch, behind Cloudflare, with automated HTTPS and search engine indexing.</p>
+
+                <div class="mini-flow" aria-label="Production architecture">
+                    <span>Cloudflare</span><i aria-hidden="true">→</i><span>Nginx</span><i aria-hidden="true">→</i><span>PM2</span><i aria-hidden="true">→</i><span class="accent">Next.js</span>
                 </div>
-                <div class="project-links">
+
+                <ul class="highlights">
+                    <li><svg class="ico"><use href="#i-check" /></svg><span data-i18n="web.hl.1">Ubuntu VPS provisioned and hardened from scratch</span></li>
+                    <li><svg class="ico"><use href="#i-check" /></svg><span data-i18n="web.hl.2">Automated SSL with Let's Encrypt and Certbot</span></li>
+                    <li><svg class="ico"><use href="#i-check" /></svg><span data-i18n="web.hl.3">Cloudflare DNS, CDN and proxy in front of Nginx</span></li>
+                    <li><svg class="ico"><use href="#i-check" /></svg><span data-i18n="web.hl.4">SEO and indexing in Google and Bing</span></li>
+                </ul>
+
+                <div class="tags">
+                    <span>Next.js 16</span><span>React 19</span><span>TypeScript</span><span>Nginx</span><span>PM2</span><span>Ubuntu 24.04</span><span>Cloudflare</span><span>Hostinger VPS</span>
+                </div>
+
+                <div class="project-foot">
+                    <span class="role-label"><span data-i18n="web.role">My role</span>: Full-Stack · DevOps · Deployment</span>
                     <a class="link-btn" href="https://www.zuvel.ai" target="_blank" rel="noopener"><svg class="ico"><use href="#i-arrow" /></svg><span data-i18n="web.link">Visit zuvel.ai</span></a>
                 </div>
             </article>
-
-            <!-- Production architecture -->
-            <div class="sub-header">
-                <h4 data-i18n="web.arch.h">Production architecture</h4>
-                <p class="sub-note" data-i18n="web.arch.note">A Next.js standalone build runs as a Node.js service managed by PM2. Nginx is the reverse proxy between public traffic and the app, while Cloudflare handles DNS, CDN, proxy and an extra security layer.</p>
-            </div>
-            <div class="flow" aria-label="Production architecture">
-                <div class="node"><strong data-i18n="web.arch.1">Visitor</strong><small>HTTPS</small></div>
-                <span class="arrow" aria-hidden="true">→</span>
-                <div class="node"><strong>Cloudflare</strong><small>DNS · CDN · Proxy</small></div>
-                <span class="arrow" aria-hidden="true">→</span>
-                <div class="node"><strong>Nginx</strong><small data-i18n="web.arch.3">reverse proxy · SSL</small></div>
-                <span class="arrow" aria-hidden="true">→</span>
-                <div class="node"><strong>PM2</strong><small data-i18n="web.arch.4">process manager</small></div>
-                <span class="arrow" aria-hidden="true">→</span>
-                <div class="node accent"><strong>Next.js 16</strong><small>standalone build</small></div>
-            </div>
-
-            <!-- Highlights -->
-            <div class="sub-header">
-                <h4 data-i18n="web.hl.h">Key highlights</h4>
-            </div>
-            <ul class="highlights">
-                <li><svg class="ico"><use href="#i-check" /></svg><span data-i18n="web.hl.1">Production-ready architecture</span></li>
-                <li><svg class="ico"><use href="#i-check" /></svg><span data-i18n="web.hl.2">VPS provisioned and configured from scratch</span></li>
-                <li><svg class="ico"><use href="#i-check" /></svg><span data-i18n="web.hl.3">HTTPS with automated SSL certificates (Let's Encrypt · Certbot)</span></li>
-                <li><svg class="ico"><use href="#i-check" /></svg><span data-i18n="web.hl.4">Nginx reverse proxy</span></li>
-                <li><svg class="ico"><use href="#i-check" /></svg><span data-i18n="web.hl.5">Process management with PM2</span></li>
-                <li><svg class="ico"><use href="#i-check" /></svg><span data-i18n="web.hl.6">CDN and DNS through Cloudflare</span></li>
-                <li><svg class="ico"><use href="#i-check" /></svg><span data-i18n="web.hl.7">Remote deploy and administration over SSH</span></li>
-                <li><svg class="ico"><use href="#i-check" /></svg><span data-i18n="web.hl.8">SEO setup and search engine indexing</span></li>
-            </ul>
-
-            <!-- Stack -->
-            <div class="sub-header">
-                <h4 data-i18n="web.stack.h">Tech stack</h4>
-            </div>
-            <div class="skills-groups">
-                <div class="skill-group">
-                    <h5 data-i18n="web.stack.g1">Frontend &amp; Framework</h5>
-                    <div class="tags"><span>Next.js 16</span><span>React 19</span><span>TypeScript</span><span>Node.js 22+</span><span>npm</span></div>
-                </div>
-                <div class="skill-group">
-                    <h5 data-i18n="web.stack.g2">Infrastructure &amp; Deployment</h5>
-                    <div class="tags"><span>Hostinger VPS KVM2</span><span>Ubuntu 24.04 LTS</span><span>PM2</span><span>Nginx</span><span>SSH</span><span>Git</span></div>
-                </div>
-                <div class="skill-group">
-                    <h5 data-i18n="web.stack.g3">Networking &amp; Security</h5>
-                    <div class="tags"><span>Cloudflare DNS</span><span>Cloudflare Proxy · CDN</span><span>HTTPS</span><span>Let's Encrypt</span><span>Certbot</span><span>UFW Firewall</span></div>
-                </div>
-                <div class="skill-group">
-                    <h5 data-i18n="web.stack.g4">Additional services</h5>
-                    <div class="tags"><span>Google Search Console</span><span>Bing Webmaster Tools</span><span>Cloudflare Email Routing</span><span data-i18n="web.stack.domain">Custom domain zuvel.ai</span></div>
-                </div>
-            </div>
         </section>
 
         <!-- SKILLS -->
@@ -279,7 +237,7 @@
                 </div>
                 <div class="skill-group">
                     <h5 data-i18n="skills.g3">Workflow</h5>
-                    <div class="tags"><span>Claude Code</span><span>Codex CLI</span><span>Test-driven development</span><span>Hostinger · NGINX</span></div>
+                    <div class="tags"><span>Claude Code</span><span>Codex CLI</span><span>Test-driven development</span><span>Nginx · PM2</span><span>Cloudflare</span><span>Linux VPS</span></div>
                 </div>
             </div>
         </section>
