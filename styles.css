@@ -764,6 +764,11 @@ section {
     scroll-margin-top: 6rem;
 }
 
+.study-card {
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.08), var(--card-bg) 55%);
+    margin-top: 1.5rem;
+}
+
 .mini-flow {
     display: flex;
     align-items: center;
