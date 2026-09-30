@@ -69,6 +69,14 @@ const ES = {
     'web.role': 'Mi rol',
     'web.link': 'Visitar zuvel.ai',
 
+    'sh.eyebrow': 'Proyecto personal · aprendizaje en IA',
+    'sh.sub': 'Mi ruta de aprendizaje en IA, organizada y medida',
+    'sh.desc': 'Una plataforma personal de estudio para organizar y seguir mi ruta de aprendizaje en Inteligencia Artificial, con contenido estructurado, seguimiento de progreso y persistencia local.',
+    'sh.hl.1': 'Lecciones estructuradas escritas en MDX y Markdown',
+    'sh.hl.2': 'Seguimiento de progreso guardado en una base SQLite local',
+    'sh.hl.3': 'Esquema tipado con Drizzle ORM y migraciones con Drizzle Kit',
+    'sh.hl.4': 'Local-first: corre sobre better-sqlite3, sin servicios externos',
+
     'skills.h2': 'Habilidades técnicas',
     'skills.g1': 'IA y Agentes',
     'skills.g2': 'Full-stack',
