@@ -84,7 +84,7 @@
                     <span class="eyebrow" data-i18n="flag.eyebrow">Flagship · ZUVEL</span>
                     <h3>AI Workers</h3>
                     <p class="flagship-sub" data-i18n="flag.sub">Customer Service AI Worker</p>
-                    <p class="flagship-desc" data-i18n="flag.desc">A platform for shipping reusable business AI agents to production. The Customer Service Worker is a finished, ready-to-use product on WhatsApp: it answers customers, books rooms and appointments, opens claims for review, and hands off to a human whenever needed. It is generic by design, so it can be deployed in any business, and it has already been implemented for a hotel.</p>
+                    <p class="flagship-desc" data-i18n="flag.desc">A platform for shipping reusable business AI agents to production. The Customer Service Worker is a finished, ready-to-use product on WhatsApp: it answers customers, books rooms and appointments, resolves returns and claims, and escalates to a person only when it's truly needed. It is generic by design, so it can be deployed in any business, and it has already been implemented for a hotel.</p>
                     <div class="tags">
                         <span>Next.js</span><span>TypeScript</span><span>Python · FastAPI</span><span>OpenAI Agents SDK</span><span>Supabase</span><span>WhatsApp Cloud API</span>
                     </div>
@@ -125,7 +125,7 @@
                             <button type="button" id="replay" class="mini-btn" data-i18n="demo.replay">Replay</button>
                         </div>
                         <ol id="traceList"></ol>
-                        <p class="trace-empty" id="traceEmpty" data-i18n="demo.traceEmpty">Tool calls, policy checks and handoffs appear here as the conversation runs.</p>
+                        <p class="trace-empty" id="traceEmpty" data-i18n="demo.traceEmpty">Tool calls, policy checks and actions appear here as the conversation runs.</p>
                     </div>
                 </div>
             </div>
@@ -137,8 +137,8 @@
             <div class="decisions">
                 <div class="decision">
                     <svg class="ico"><use href="#i-chat" /></svg>
-                    <h5 data-i18n="dec.1t">Human handoff is mandatory</h5>
-                    <p data-i18n="dec.1">Every conversation can escalate to a person with the full context attached. The agent knows what it should not decide.</p>
+                    <h5 data-i18n="dec.1t">Escalates only when truly needed</h5>
+                    <p data-i18n="dec.1">The agent resolves requests end to end within business policy. Only what falls outside it goes to a person, with the full context attached.</p>
                 </div>
                 <div class="decision">
                     <svg class="ico"><use href="#i-shield" /></svg>
@@ -158,7 +158,7 @@
                 <div class="decision">
                     <svg class="ico"><use href="#i-check" /></svg>
                     <h5 data-i18n="dec.5t">Safe scope by design</h5>
-                    <p data-i18n="dec.5">Returns &amp; Claims only collects evidence and opens cases for human review. Appointments re-check availability right before confirming.</p>
+                    <p data-i18n="dec.5">Returns &amp; Claims checks evidence against the return policy before approving. Appointments re-check availability right before confirming.</p>
                 </div>
                 <div class="decision">
                     <svg class="ico"><use href="#i-box" /></svg>
@@ -180,7 +180,7 @@
                 <span class="arrow" aria-hidden="true">→</span>
                 <div class="node"><strong>Supabase</strong><small data-i18n="arch.4">tenant-isolated data</small></div>
                 <span class="arrow" aria-hidden="true">→</span>
-                <div class="node accent"><strong data-i18n="arch.5">Human handoff</strong><small>Control Plane</small></div>
+                <div class="node accent"><strong data-i18n="arch.5">Smart escalation</strong><small>Control Plane</small></div>
             </div>
         </section>
 
