@@ -293,15 +293,6 @@ section {
     border-radius: 2px;
 }
 
-.sub-header {
-    max-width: 1100px;
-    margin: 3.5rem auto 1.4rem;
-}
-
-.sub-header h4 {
-    font-size: 1.35rem;
-}
-
 /* Flagship */
 .flagship-section>* {
     max-width: 1100px;
@@ -680,81 +671,6 @@ section {
 }
 
 /* Decisions */
-.decisions {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.2rem;
-}
-
-.decision {
-    background: var(--card-bg);
-    border: 1px solid var(--line);
-    border-radius: 16px;
-    padding: 1.4rem;
-    transition: var(--transition);
-}
-
-.decision:hover {
-    border-color: rgba(108, 92, 231, 0.4);
-    transform: translateY(-4px);
-}
-
-.decision .ico {
-    width: 1.7rem;
-    height: 1.7rem;
-    color: var(--accent-soft);
-    margin-bottom: 0.7rem;
-}
-
-.decision h5 {
-    font-size: 1.05rem;
-    margin-bottom: 0.4rem;
-}
-
-.decision p {
-    color: var(--text-secondary);
-    font-size: 0.92rem;
-}
-
-/* Flow */
-.flow {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    gap: 0.6rem;
-    flex-wrap: wrap;
-}
-
-.node {
-    background: var(--card-bg);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 0.8rem 1.1rem;
-    text-align: center;
-    min-width: 150px;
-}
-
-.node strong {
-    display: block;
-    font-size: 0.95rem;
-}
-
-.node small {
-    color: var(--text-secondary);
-    font-size: 0.78rem;
-}
-
-.node.accent {
-    border-color: rgba(108, 92, 231, 0.6);
-    background: rgba(108, 92, 231, 0.12);
-}
-
-.arrow {
-    align-self: center;
-    color: var(--accent-soft);
-    font-size: 1.3rem;
-}
-
 /* ZUVEL Website */
 .project-card {
     background: linear-gradient(135deg, rgba(74, 222, 128, 0.08), var(--card-bg) 55%);
@@ -767,6 +683,31 @@ section {
 .study-card {
     background: linear-gradient(135deg, rgba(56, 189, 248, 0.08), var(--card-bg) 55%);
     margin-top: 1.5rem;
+}
+
+.ai-card .demo {
+    margin: 0 0 2rem;
+    background: rgba(10, 10, 10, 0.45);
+}
+
+.card-sub {
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+}
+
+.decision-list {
+    max-width: none;
+    gap: 0.9rem 2rem;
+}
+
+.decision-list strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.project-foot.links-only {
+    justify-content: flex-start;
+    gap: 1.5rem;
 }
 
 .mini-flow {
@@ -965,17 +906,6 @@ footer {
         height: auto;
         max-height: 320px;
     }
-
-    .arrow {
-        transform: rotate(90deg);
-        flex-basis: 100%;
-        text-align: center;
-    }
-
-    .flow {
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 @media (max-width: 768px) {
@@ -1014,6 +944,12 @@ footer {
 
     .flagship-card h3 {
         font-size: 2rem;
+    }
+
+    .ai-card .demo {
+        margin-left: -0.9rem;
+        margin-right: -0.9rem;
+        padding: 0.9rem;
     }
 
     .scores {

@@ -49,9 +49,7 @@ const ES = {
     'dec.6t': 'Núcleo genérico, a medida encima',
     'dec.6': 'Productos estandarizados para ir rápido, más desarrollo a medida para necesidades especializadas, todo desde una plataforma reutilizable.',
 
-    'arch.h': 'Cómo fluye un mensaje',
     'arch.1': 'Cliente',
-    'arch.4': 'datos aislados por tenant',
     'arch.5': 'Escalamiento inteligente',
 
 
