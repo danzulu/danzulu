@@ -33,7 +33,7 @@ const ES = {
     'demo.online': 'AI Worker · en línea',
     'demo.trace': 'Registro del agente',
     'demo.replay': 'Repetir',
-    'demo.traceEmpty': 'Las llamadas a herramientas, validaciones de políticas y traspasos aparecen aquí mientras corre la conversación.',
+    'demo.traceEmpty': 'Las llamadas a herramientas, validaciones de políticas y acciones aparecen aquí mientras corre la conversación.',
 
     'dec.h': 'Decisiones de ingeniería detrás del producto',
     'dec.1t': 'El traspaso a una persona es obligatorio',
@@ -118,14 +118,20 @@ const SCENARIOS = {
             },
             {
                 who: 'agent',
-                trace: ['HANDOFF', 'policy.late_checkout → requires staff approval · handoff.create(reason="late check-out", context=attached)'],
-                en: 'Late check-out needs the front desk\'s approval, so I\'ve passed your request to a team member. They\'ll reply here shortly.',
-                es: 'El check-out tarde requiere aprobación de recepción, así que pasé tu solicitud a una persona del equipo. Te responderá por aquí en breve.'
+                trace: ['KB', 'policy.late_checkout → free until 1:00 PM if the room is not booked next day'],
+                en: 'Let me check that for you.',
+                es: 'Déjame revisarlo.'
+            },
+            {
+                who: 'agent',
+                trace: ['TOOL', 'booking.check_next_day(room="Deluxe King", date="Oct 14") → free · booking.update(#A-4821, check_out="1:00 PM")'],
+                en: 'Good news: your room is free the next day, so I added a late check-out until 1:00 PM at no extra cost. It\'s already on reservation #A-4821.',
+                es: 'Buenas noticias: tu habitación está libre el día siguiente, así que te agregué check-out tarde hasta la 1:00 PM sin costo adicional. Ya quedó en la reserva #A-4821.'
             },
             {
                 who: 'sys',
-                en: 'Handed off to a human · full conversation attached',
-                es: 'Traspasado a una persona · conversación completa adjunta'
+                en: 'Resolved by the agent · reservation #A-4821 updated',
+                es: 'Resuelto por el agente · reserva #A-4821 actualizada'
             }
         ]
     },
@@ -191,14 +197,25 @@ const SCENARIOS = {
             },
             {
                 who: 'agent',
-                trace: ['CASE', 'claims.create_case(order="#10453", reason="wrong size", evidence=1 photo, status="pending_review") → C-2207'],
-                en: 'Thanks! I opened case C-2207 with your order details and photo. A team member will review it and confirm the outcome. I can\'t approve returns myself.',
-                es: '¡Gracias! Abrí el caso C-2207 con los datos de tu pedido y la foto. Una persona del equipo lo revisará y te confirmará el resultado. Yo no puedo aprobar devoluciones.'
+                trace: ['CASE', 'claims.create_case(order="#10453", reason="wrong size", evidence=1 photo) · policy.check → tag intact, eligible → C-2207 approved'],
+                en: 'Thanks! The tag is intact and the reason qualifies, so your return is approved (case C-2207). Would you like a refund or an exchange for another size?',
+                es: '¡Gracias! La etiqueta está intacta y el motivo aplica, así que tu devolución quedó aprobada (caso C-2207). ¿Prefieres el reembolso o cambiarla por otra talla?'
+            },
+            {
+                who: 'user',
+                en: 'Exchange for a size M, please.',
+                es: 'Cambio por talla M, por favor.'
+            },
+            {
+                who: 'agent',
+                trace: ['TOOL', 'inventory.reserve(sku="jacket", size="M") → reserved · shipping.create_return_label(#10453) → sent'],
+                en: 'Done! I reserved a size M for you and emailed a prepaid return label. Your new jacket ships as soon as the courier picks up the old one.',
+                es: '¡Listo! Te separé una talla M y te envié por correo una guía de devolución prepagada. Tu chaqueta nueva sale apenas el mensajero recoja la anterior.'
             },
             {
                 who: 'sys',
-                en: 'Case C-2207 queued for human review',
-                es: 'Caso C-2207 en cola para revisión humana'
+                en: 'Resolved by the agent · exchange C-2207 in progress',
+                es: 'Resuelto por el agente · cambio C-2207 en curso'
             }
         ]
     }
