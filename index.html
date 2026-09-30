@@ -39,7 +39,7 @@
         <a class="logo" href="#home" aria-label="Daniel Zuluaga - home">DZ</a>
         <nav aria-label="Main">
             <ul>
-                <li><a href="#flagship" data-i18n="nav.flagship">Flagship</a></li>
+                <li><a href="#flagship" data-i18n="nav.flagship">Projects</a></li>
                 <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
                 <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
             </ul>
@@ -75,7 +75,7 @@
         <!-- FLAGSHIP -->
         <section id="flagship" class="flagship-section">
             <div class="section-header">
-                <h2 data-i18n="flag.h2">Flagship Project</h2>
+                <h2 data-i18n="flag.h2">Projects</h2>
                 <div class="underline"></div>
             </div>
 
@@ -182,6 +182,34 @@
                 <span class="arrow" aria-hidden="true">→</span>
                 <div class="node accent"><strong data-i18n="arch.5">Smart escalation</strong><small>Control Plane</small></div>
             </div>
+
+            <!-- ZUVEL Website -->
+            <article class="flagship-card project-card" id="website">
+                <span class="eyebrow" data-i18n="web.eyebrow">Corporate website · zuvel.ai</span>
+                <h3>ZUVEL Website</h3>
+                <p class="flagship-sub" data-i18n="web.sub">Designed, built and deployed by me</p>
+                <p class="flagship-desc" data-i18n="web.desc">ZUVEL's corporate website: a Next.js app running on a VPS I set up from scratch, behind Cloudflare, with automated HTTPS and search engine indexing.</p>
+
+                <div class="mini-flow" aria-label="Production architecture">
+                    <span>Cloudflare</span><i aria-hidden="true">→</i><span>Nginx</span><i aria-hidden="true">→</i><span>PM2</span><i aria-hidden="true">→</i><span class="accent">Next.js</span>
+                </div>
+
+                <ul class="highlights">
+                    <li><svg class="ico"><use href="#i-check" /></svg><span data-i18n="web.hl.1">Ubuntu VPS provisioned and hardened from scratch</span></li>
+                    <li><svg class="ico"><use href="#i-check" /></svg><span data-i18n="web.hl.2">Automated SSL with Let's Encrypt and Certbot</span></li>
+                    <li><svg class="ico"><use href="#i-check" /></svg><span data-i18n="web.hl.3">Cloudflare DNS, CDN and proxy in front of Nginx</span></li>
+                    <li><svg class="ico"><use href="#i-check" /></svg><span data-i18n="web.hl.4">SEO and indexing in Google and Bing</span></li>
+                </ul>
+
+                <div class="tags">
+                    <span>Next.js 16</span><span>React 19</span><span>TypeScript</span><span>Nginx</span><span>PM2</span><span>Ubuntu 24.04</span><span>Cloudflare</span><span>Hostinger VPS</span>
+                </div>
+
+                <div class="project-foot">
+                    <span class="role-label"><span data-i18n="web.role">My role</span>: Full-Stack · DevOps · Deployment</span>
+                    <a class="link-btn" href="https://www.zuvel.ai" target="_blank" rel="noopener"><svg class="ico"><use href="#i-arrow" /></svg><span data-i18n="web.link">Visit zuvel.ai</span></a>
+                </div>
+            </article>
         </section>
 
         <!-- SKILLS -->
@@ -201,7 +229,7 @@
                 </div>
                 <div class="skill-group">
                     <h5 data-i18n="skills.g3">Workflow</h5>
-                    <div class="tags"><span>Claude Code</span><span>Codex CLI</span><span>Test-driven development</span><span>Hostinger · NGINX</span></div>
+                    <div class="tags"><span>Claude Code</span><span>Codex CLI</span><span>Test-driven development</span><span>Nginx · PM2</span><span>Cloudflare</span><span>Linux VPS</span></div>
                 </div>
             </div>
         </section>

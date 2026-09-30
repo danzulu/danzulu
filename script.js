@@ -2,7 +2,7 @@
 /* i18n: English lives in the HTML; Spanish lives here.                */
 /* ------------------------------------------------------------------ */
 const ES = {
-    'nav.flagship': 'Proyecto insignia',
+    'nav.flagship': 'Proyectos',
     'nav.skills': 'Habilidades',
     'nav.contact': 'Contacto',
 
@@ -18,7 +18,7 @@ const ES = {
     'stats.2': 'app de Tech Provider de WhatsApp',
     'stats.3': 'bilingüe, listo para remoto',
 
-    'flag.h2': 'Proyecto insignia',
+    'flag.h2': 'Proyectos',
     'flag.eyebrow': 'Insignia · ZUVEL',
     'flag.sub': 'AI Worker de Servicio al Cliente',
     'flag.desc': 'Una plataforma para llevar a producción agentes de IA reutilizables para empresas. El Worker de Servicio al Cliente es un producto terminado y listo para usar en WhatsApp: atiende clientes, reserva habitaciones y citas, resuelve devoluciones y reclamos, y escala a una persona solo cuando realmente hace falta. Es genérico por diseño, así que se puede implementar en cualquier negocio, y ya fue implementado para un hotel.',
@@ -54,6 +54,16 @@ const ES = {
     'arch.4': 'datos aislados por tenant',
     'arch.5': 'Escalamiento inteligente',
 
+
+    'web.eyebrow': 'Sitio corporativo · zuvel.ai',
+    'web.sub': 'Diseñado, construido y desplegado por mí',
+    'web.desc': 'El sitio corporativo de ZUVEL: una app en Next.js que corre en un VPS que configuré desde cero, detrás de Cloudflare, con HTTPS automatizado e indexación en buscadores.',
+    'web.hl.1': 'VPS Ubuntu montado y asegurado desde cero',
+    'web.hl.2': "SSL automatizado con Let's Encrypt y Certbot",
+    'web.hl.3': 'DNS, CDN y proxy de Cloudflare delante de Nginx',
+    'web.hl.4': 'SEO e indexación en Google y Bing',
+    'web.role': 'Mi rol',
+    'web.link': 'Visitar zuvel.ai',
 
     'skills.h2': 'Habilidades técnicas',
     'skills.g1': 'IA y Agentes',
