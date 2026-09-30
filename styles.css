@@ -760,6 +760,8 @@ section {
     background: linear-gradient(135deg, rgba(74, 222, 128, 0.08), var(--card-bg) 55%);
     border-color: var(--line);
     box-shadow: none;
+    margin-top: 3.5rem;
+    scroll-margin-top: 6rem;
 }
 
 .mini-flow {

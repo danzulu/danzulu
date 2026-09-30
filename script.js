@@ -2,8 +2,7 @@
 /* i18n: English lives in the HTML; Spanish lives here.                */
 /* ------------------------------------------------------------------ */
 const ES = {
-    'nav.flagship': 'Proyecto insignia',
-    'nav.website': 'Sitio web',
+    'nav.flagship': 'Proyectos',
     'nav.skills': 'Habilidades',
     'nav.contact': 'Contacto',
 
@@ -19,7 +18,7 @@ const ES = {
     'stats.2': 'app de Tech Provider de WhatsApp',
     'stats.3': 'bilingüe, listo para remoto',
 
-    'flag.h2': 'Proyecto insignia',
+    'flag.h2': 'Proyectos',
     'flag.eyebrow': 'Insignia · ZUVEL',
     'flag.sub': 'AI Worker de Servicio al Cliente',
     'flag.desc': 'Una plataforma para llevar a producción agentes de IA reutilizables para empresas. El Worker de Servicio al Cliente es un producto terminado y listo para usar en WhatsApp: atiende clientes, reserva habitaciones y citas, resuelve devoluciones y reclamos, y escala a una persona solo cuando realmente hace falta. Es genérico por diseño, así que se puede implementar en cualquier negocio, y ya fue implementado para un hotel.',
@@ -56,7 +55,6 @@ const ES = {
     'arch.5': 'Escalamiento inteligente',
 
 
-    'web.h2': 'Otro proyecto',
     'web.eyebrow': 'Sitio corporativo · zuvel.ai',
     'web.sub': 'Diseñado, construido y desplegado por mí',
     'web.desc': 'El sitio corporativo de ZUVEL: una app en Next.js que corre en un VPS que configuré desde cero, detrás de Cloudflare, con HTTPS automatizado e indexación en buscadores.',
