@@ -85,6 +85,7 @@ const ES = {
     'contact.h2': 'Construyamos algo juntos',
     'contact.p': 'Disponible para roles remotos de desarrollo e ingeniería de IA. Si quieres ver AI Workers en acción o conversar sobre tu equipo, escríbeme.',
     'contact.wa': 'Escríbeme por WhatsApp',
+    'toTop': 'Volver al inicio',
     'footer': 'Todos los derechos reservados.'
 };
 
@@ -402,9 +403,19 @@ document.addEventListener('DOMContentLoaded', () => {
             const el = document.querySelector(target);
             if (!el) return;
             e.preventDefault();
-            el.scrollIntoView({ behavior: 'smooth' });
+            if (target === '#home') {
+                window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+            } else {
+                el.scrollIntoView({ behavior: 'smooth' });
+            }
         });
     });
+
+    // Back-to-top button: shown once the hero is scrolled past
+    const toTop = document.getElementById('toTop');
+    const updateToTop = () => toTop.classList.toggle('show', window.scrollY > window.innerHeight * 0.6);
+    window.addEventListener('scroll', updateToTop, { passive: true });
+    updateToTop();
 
     // Demo tabs + replay
     const tabs = document.querySelectorAll('.demo-tabs button');
