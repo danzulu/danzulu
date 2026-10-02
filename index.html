@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20261002">
+    <link rel="stylesheet" href="styles.css?v=20261003">
 </head>
 
 <body>
@@ -160,9 +160,17 @@
                 <p class="flagship-sub" data-i18n="web.sub">Designed, built and deployed by me</p>
                 <p class="flagship-desc" data-i18n="web.desc">ZUVEL's corporate website: a Next.js app running on a VPS I set up from scratch, behind Cloudflare, with automated HTTPS and search engine indexing.</p>
 
-                <a class="project-shot" href="https://www.zuvel.ai" target="_blank" rel="noopener">
-                    <img src="assets/zuvel-website.webp" width="2000" height="1011" loading="lazy" decoding="async" alt="zuvel.ai homepage: hero reading Workers de IA, automatización y software para tu empresa, next to the Inteligencia en acción diagram">
-                </a>
+                <p class="sh-try" data-i18n="web.try">Browse the live site's pages. Switch the portfolio language to see it in English or Spanish.</p>
+                <div class="zw-demo" id="zwDemo">
+                    <div class="zw-top">
+                        <div class="zw-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                        <a class="zw-url" href="https://www.zuvel.ai" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-shield" /></svg><span>zuvel.ai</span></a>
+                    </div>
+                    <div class="zw-tabs" role="group" aria-label="zuvel.ai pages"></div>
+                    <div class="zw-screen" tabindex="0">
+                        <img alt="" loading="lazy" decoding="async">
+                    </div>
+                </div>
 
                 <div class="mini-flow" aria-label="Production architecture">
                     <span>Cloudflare</span><i aria-hidden="true">→</i><span>Nginx</span><i aria-hidden="true">→</i><span>PM2</span><i aria-hidden="true">→</i><span class="accent">Next.js</span>
@@ -279,8 +287,9 @@
 
     <a href="#home" class="to-top" id="toTop"><svg class="ico" aria-hidden="true"><use href="#i-up" /></svg><span class="sr-only" data-i18n="toTop">Back to top</span></a>
 
-    <script src="script.js?v=20261002"></script>
-    <script src="studyhub-demo.js?v=20261002"></script>
+    <script src="script.js?v=20261003"></script>
+    <script src="studyhub-demo.js?v=20261003"></script>
+    <script src="zuvel-site-demo.js?v=20261003"></script>
 </body>
 
 </html>
