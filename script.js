@@ -9,8 +9,8 @@ const ES = {
     'hero.chip': 'Disponible para roles 100% remotos',
     'hero.role': 'Desarrollador Full-Stack',
     'hero.tagline': 'Construyo software que llega a producción.',
-    'hero.bio1': 'Soy desarrollador full-stack y construyo aplicaciones web listas para producción y sistemas con IA de principio a fin, desde la arquitectura y las bases de datos hasta el despliegue. Trabajo con Next.js, TypeScript, Python y PostgreSQL, y me enfoco en código limpio, pruebas y software que resuelve problemas reales de negocio.',
-    'hero.bio2': 'Mi proyecto insignia, AI Workers, es una plataforma multi-tenant para desplegar en producción agentes de IA para empresas, empezando por un Worker de Servicio al Cliente que funciona en WhatsApp.',
+    'hero.bio1': 'Soy desarrollador full-stack y construyo <strong>aplicaciones web listas para producción</strong> y <strong>sistemas con IA</strong> de principio a fin, desde la arquitectura y las bases de datos hasta el despliegue, con foco en <strong>código limpio, pruebas</strong> y software que resuelve problemas reales de negocio.',
+    'hero.bio2': 'Mi proyecto insignia, <strong>AI Workers</strong>, es una plataforma multi-tenant para desplegar en producción agentes de IA para empresas, empezando por un Worker de Servicio al Cliente que funciona en WhatsApp.',
     'hero.cta1': 'Ver el proyecto insignia',
     'hero.cta2': 'Contáctame',
     'stats.1n': 'De principio a fin',
@@ -258,7 +258,7 @@ function safeSet(key, value) {
 
 function captureEnglish() {
     document.querySelectorAll('[data-i18n]').forEach(el => {
-        EN[el.dataset.i18n] = el.textContent;
+        EN[el.dataset.i18n] = el.hasAttribute('data-i18n-html') ? el.innerHTML : el.textContent;
     });
 }
 
@@ -269,7 +269,10 @@ function applyLang(next) {
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.dataset.i18n;
         const text = next === 'es' ? ES[key] : EN[key];
-        if (text !== undefined) el.textContent = text;
+        if (text === undefined) return;
+        // data-i18n-html marks trusted static copy that carries inline <strong> emphasis
+        if (el.hasAttribute('data-i18n-html')) el.innerHTML = text;
+        else el.textContent = text;
     });
     document.querySelectorAll('.lang-toggle button').forEach(b => {
         b.setAttribute('aria-pressed', String(b.dataset.lang === next));

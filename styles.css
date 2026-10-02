@@ -242,6 +242,36 @@ a:focus-visible {
     background: rgba(255, 255, 255, 0.05);
 }
 
+.bio strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.bio.lead {
+    font-size: 1.45rem;
+    color: #d6d6df;
+    margin-bottom: 1.2rem;
+}
+
+.hero-stack {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 0 auto 1.8rem;
+}
+
+.hero-stack li {
+    border: 1px solid rgba(124, 77, 255, 0.45);
+    background: rgba(124, 77, 255, 0.12);
+    color: #c9bcff;
+    border-radius: 999px;
+    padding: 0.35rem 1rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
 .stats {
     list-style: none;
     display: flex;
@@ -954,6 +984,10 @@ footer {
     .bio {
         font-size: 1.15rem;
         line-height: 1.7;
+    }
+
+    .bio.lead {
+        font-size: 1.25rem;
     }
 
     .cta-buttons {
