@@ -67,6 +67,7 @@ const ES = {
     'web.sc.note': 'Lighthouse con PageSpeed Insights en escritorio, sep. 2026. En móvil: 95 en rendimiento y 100 en el resto.',
     'web.role': 'Mi rol',
     'web.link': 'Visitar zuvel.ai',
+    'web.try': 'Recorre las páginas del sitio en vivo. Cambia el idioma del portafolio para verlo en español o en inglés.',
 
     'sh.eyebrow': 'Proyecto personal · aprendizaje en IA',
     'sh.sub': 'Mi ruta de aprendizaje en IA, organizada y medida',
