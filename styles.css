@@ -178,31 +178,35 @@ a:focus-visible {
     font-size: 4rem;
     margin-bottom: 0.6rem;
     line-height: 1.1;
-    background: linear-gradient(to right, #fff, #a29bfe);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #7c4dff;
 }
 
 .subtitle {
-    font-size: 1.5rem;
-    color: var(--accent-soft);
-    font-weight: 500;
-    margin-bottom: 0.4rem;
+    display: inline-block;
+    font-size: 1.3rem;
+    color: #c9bcff;
+    font-weight: 600;
+    margin: 0.4rem 0 0.4rem;
+    padding: 0.35rem 1.3rem;
+    border: 1px solid rgba(124, 77, 255, 0.55);
+    background: rgba(124, 77, 255, 0.14);
+    border-radius: 999px;
 }
 
 .tagline {
-    font-size: 1.25rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.25;
     color: var(--text-primary);
-    margin-bottom: 1.5rem;
+    margin: 0.8rem 0 1.8rem;
 }
 
 .bio {
-    font-size: 1.1rem;
-    color: var(--text-secondary);
+    font-size: 1.3rem;
+    color: #c9c9d4;
     margin: 0 auto 1.4rem;
-    max-width: 780px;
-    line-height: 1.8;
+    max-width: 860px;
+    line-height: 1.75;
 }
 
 .cta-buttons {
@@ -242,6 +246,36 @@ a:focus-visible {
 .btn.secondary:hover {
     border-color: var(--text-primary);
     background: rgba(255, 255, 255, 0.05);
+}
+
+.bio strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.bio.lead {
+    font-size: 1.45rem;
+    color: #d6d6df;
+    margin-bottom: 1.2rem;
+}
+
+.hero-stack {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 0 auto 1.8rem;
+}
+
+.hero-stack li {
+    border: 1px solid rgba(124, 77, 255, 0.45);
+    background: rgba(124, 77, 255, 0.12);
+    color: #c9bcff;
+    border-radius: 999px;
+    padding: 0.35rem 1rem;
+    font-size: 0.95rem;
+    font-weight: 600;
 }
 
 .stats {
@@ -946,6 +980,19 @@ footer {
     }
 
     .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .tagline {
+        font-size: 1.55rem;
+    }
+
+    .bio {
+        font-size: 1.15rem;
+        line-height: 1.7;
+    }
+
+    .bio.lead {
         font-size: 1.25rem;
     }
 

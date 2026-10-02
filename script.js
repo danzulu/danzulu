@@ -7,13 +7,14 @@ const ES = {
     'nav.contact': 'Contacto',
 
     'hero.chip': 'Disponible para roles 100% remotos',
-    'hero.role': 'Desarrollador y AI Builder',
-    'hero.tagline': 'Construyo productos de IA que llegan a producción.',
-    'hero.bio1': 'Convierto problemas de negocio en software que funciona. Después de más de 6 años en gestión de negocios y cuentas clave, hoy construyo agentes de IA y productos full-stack de principio a fin, usando programación asistida por IA con pruebas reales y disciplina de producción.',
-    'hero.bio2': 'Mi proyecto insignia, AI Workers, es una plataforma para llevar a producción agentes de IA reutilizables para empresas, empezando por un Worker de Servicio al Cliente que funciona en WhatsApp.',
+    'hero.role': 'Desarrollador Full-Stack',
+    'hero.tagline': 'Construyo software que impulsa negocios.',
+    'hero.bio1': 'Soy desarrollador full-stack y construyo <strong>software listo para producción</strong> de principio a fin, desde <strong>aplicaciones web y APIs</strong> hasta <strong>automatizaciones y sistemas con IA</strong>, cubriendo arquitectura, bases de datos y despliegue con foco en <strong>código limpio, pruebas</strong> y en resolver problemas reales de negocio.',
+    'hero.bio2': 'Mi proyecto insignia, <strong>AI Workers</strong>, es una plataforma multi-tenant para desplegar en producción agentes de IA para empresas, empezando por un Worker de Servicio al Cliente que funciona en WhatsApp.',
     'hero.cta1': 'Ver el proyecto insignia',
     'hero.cta2': 'Contáctame',
-    'stats.1': 'años en negocios y cuentas clave',
+    'stats.1n': 'De principio a fin',
+    'stats.1': 'frontend, backend e infraestructura',
     'stats.2n': 'Verificada por Meta',
     'stats.2': 'app de Tech Provider de WhatsApp',
     'stats.3': 'bilingüe, listo para remoto',
@@ -88,8 +89,8 @@ const ES = {
 };
 
 const TITLES = {
-    en: 'Daniel Zuluaga | Developer & AI Builder',
-    es: 'Daniel Zuluaga | Desarrollador y AI Builder'
+    en: 'Daniel Zuluaga | Full-Stack Developer',
+    es: 'Daniel Zuluaga | Desarrollador Full-Stack'
 };
 
 /* ------------------------------------------------------------------ */
@@ -257,7 +258,7 @@ function safeSet(key, value) {
 
 function captureEnglish() {
     document.querySelectorAll('[data-i18n]').forEach(el => {
-        EN[el.dataset.i18n] = el.textContent;
+        EN[el.dataset.i18n] = el.hasAttribute('data-i18n-html') ? el.innerHTML : el.textContent;
     });
 }
 
@@ -268,7 +269,10 @@ function applyLang(next) {
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.dataset.i18n;
         const text = next === 'es' ? ES[key] : EN[key];
-        if (text !== undefined) el.textContent = text;
+        if (text === undefined) return;
+        // data-i18n-html marks trusted static copy that carries inline <strong> emphasis
+        if (el.hasAttribute('data-i18n-html')) el.innerHTML = text;
+        else el.textContent = text;
     });
     document.querySelectorAll('.lang-toggle button').forEach(b => {
         b.setAttribute('aria-pressed', String(b.dataset.lang === next));
