@@ -71,6 +71,7 @@ const ES = {
     'sh.eyebrow': 'Proyecto personal · aprendizaje en IA',
     'sh.sub': 'Mi ruta de aprendizaje en IA, organizada y medida',
     'sh.desc': 'Una plataforma personal de estudio para organizar y seguir mi ruta de aprendizaje en Inteligencia Artificial, con contenido estructurado, seguimiento de progreso y persistencia local.',
+    'sh.try': 'Pruébalo: cambia de pestaña, abre una lección y márcala como completada.',
     'sh.hl.1': 'Lecciones estructuradas escritas en MDX y Markdown',
     'sh.hl.2': 'Seguimiento de progreso guardado en una base SQLite local',
     'sh.hl.3': 'Esquema tipado con Drizzle ORM y migraciones con Drizzle Kit',

@@ -19,7 +19,7 @@
     <meta name="theme-color" content="#0a0a0a">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -200,6 +200,20 @@
                 <p class="flagship-sub" data-i18n="sh.sub">My AI learning path, organized and tracked</p>
                 <p class="flagship-desc" data-i18n="sh.desc">A personal study platform to organize and follow my learning path in Artificial Intelligence, with structured content, progress tracking and local persistence.</p>
 
+                <p class="sh-try" data-i18n="sh.try">Try it: switch tabs, open a lesson and mark it complete.</p>
+                <div class="sh-demo" id="shDemo">
+                    <div class="sh-top">
+                        <div class="sh-brand"><img src="assets/zuvel-wordmark.png" width="74" height="24" alt="zuvel."><span>Study Hub</span></div>
+                        <nav class="sh-nav" aria-label="Study Hub preview">
+                            <button type="button" data-go="dashboard">Dashboard</button>
+                            <button type="button" data-go="roadmap">Roadmap</button>
+                            <button type="button" data-go="study">Study</button>
+                            <button type="button" data-go="progress">Progress</button>
+                        </nav>
+                    </div>
+                    <div class="sh-screen"><div class="sh-view" aria-live="polite"></div></div>
+                </div>
+
                 <div class="mini-flow" aria-label="Architecture">
                     <span>Next.js</span><i aria-hidden="true">→</i><span>Drizzle ORM</span><i aria-hidden="true">→</i><span class="accent">SQLite</span>
                 </div>
@@ -266,6 +280,7 @@
     <a href="#home" class="to-top" id="toTop"><svg class="ico" aria-hidden="true"><use href="#i-up" /></svg><span class="sr-only" data-i18n="toTop">Back to top</span></a>
 
     <script src="script.js"></script>
+    <script src="studyhub-demo.js"></script>
 </body>
 
 </html>
