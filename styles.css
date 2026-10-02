@@ -710,6 +710,26 @@ section {
     gap: 1.5rem;
 }
 
+.project-shot {
+    display: block;
+    margin-bottom: 1.6rem;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.project-shot:hover {
+    border-color: rgba(108, 92, 231, 0.5);
+    transform: translateY(-3px);
+}
+
+.project-shot img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .mini-flow {
     display: flex;
     align-items: center;
