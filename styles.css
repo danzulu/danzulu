@@ -192,17 +192,18 @@ a:focus-visible {
 }
 
 .tagline {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 500;
     color: var(--text-primary);
     margin-bottom: 1.5rem;
 }
 
 .bio {
-    font-size: 1.1rem;
-    color: var(--text-secondary);
+    font-size: 1.3rem;
+    color: #c9c9d4;
     margin: 0 auto 1.4rem;
-    max-width: 780px;
-    line-height: 1.8;
+    max-width: 860px;
+    line-height: 1.75;
 }
 
 .cta-buttons {
@@ -947,6 +948,15 @@ footer {
 
     .subtitle {
         font-size: 1.25rem;
+    }
+
+    .tagline {
+        font-size: 1.3rem;
+    }
+
+    .bio {
+        font-size: 1.15rem;
+        line-height: 1.7;
     }
 
     .cta-buttons {
