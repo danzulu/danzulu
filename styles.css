@@ -182,10 +182,15 @@ a:focus-visible {
 }
 
 .subtitle {
-    font-size: 1.5rem;
-    color: var(--accent-soft);
-    font-weight: 500;
-    margin-bottom: 0.4rem;
+    display: inline-block;
+    font-size: 1.3rem;
+    color: #c9bcff;
+    font-weight: 600;
+    margin: 0.4rem 0 0.4rem;
+    padding: 0.35rem 1.3rem;
+    border: 1px solid rgba(124, 77, 255, 0.55);
+    background: rgba(124, 77, 255, 0.14);
+    border-radius: 999px;
 }
 
 .tagline {
@@ -975,7 +980,7 @@ footer {
     }
 
     .subtitle {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
     }
 
     .tagline {
