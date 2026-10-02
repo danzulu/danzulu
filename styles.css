@@ -178,10 +178,7 @@ a:focus-visible {
     font-size: 4rem;
     margin-bottom: 0.6rem;
     line-height: 1.1;
-    background: linear-gradient(to right, #b8b0ff, #7c6cf0);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #9b8cff;
 }
 
 .subtitle {
