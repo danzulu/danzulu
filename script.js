@@ -8,7 +8,7 @@ const ES = {
 
     'hero.chip': 'Disponible para roles 100% remotos',
     'hero.role': 'Desarrollador Full-Stack',
-    'hero.tagline': 'Construyo software que llega a producción.',
+    'hero.tagline': 'Construyo software que impulsa negocios.',
     'hero.bio1': 'Soy desarrollador full-stack y construyo <strong>software listo para producción</strong> de principio a fin, desde <strong>aplicaciones web y APIs</strong> hasta <strong>automatizaciones y sistemas con IA</strong>, cubriendo arquitectura, bases de datos y despliegue con foco en <strong>código limpio, pruebas</strong> y en resolver problemas reales de negocio.',
     'hero.bio2': 'Mi proyecto insignia, <strong>AI Workers</strong>, es una plataforma multi-tenant para desplegar en producción agentes de IA para empresas, empezando por un Worker de Servicio al Cliente que funciona en WhatsApp.',
     'hero.cta1': 'Ver el proyecto insignia',
