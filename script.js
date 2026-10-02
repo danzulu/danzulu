@@ -7,13 +7,14 @@ const ES = {
     'nav.contact': 'Contacto',
 
     'hero.chip': 'Disponible para roles 100% remotos',
-    'hero.role': 'Desarrollador y AI Builder',
-    'hero.tagline': 'Construyo productos de IA que llegan a producción.',
-    'hero.bio1': 'Convierto problemas de negocio en software que funciona. Después de más de 6 años en gestión de negocios y cuentas clave, hoy construyo agentes de IA y productos full-stack de principio a fin, usando programación asistida por IA con pruebas reales y disciplina de producción.',
-    'hero.bio2': 'Mi proyecto insignia, AI Workers, es una plataforma para llevar a producción agentes de IA reutilizables para empresas, empezando por un Worker de Servicio al Cliente que funciona en WhatsApp.',
+    'hero.role': 'Desarrollador Full-Stack',
+    'hero.tagline': 'Construyo software que llega a producción.',
+    'hero.bio1': 'Soy desarrollador full-stack y construyo aplicaciones web listas para producción y sistemas con IA de principio a fin, desde la arquitectura y las bases de datos hasta el despliegue. Trabajo con Next.js, TypeScript, Python y PostgreSQL, y me enfoco en código limpio, pruebas y software que resuelve problemas reales de negocio.',
+    'hero.bio2': 'Mi proyecto insignia, AI Workers, es una plataforma multi-tenant para desplegar en producción agentes de IA para empresas, empezando por un Worker de Servicio al Cliente que funciona en WhatsApp.',
     'hero.cta1': 'Ver el proyecto insignia',
     'hero.cta2': 'Contáctame',
-    'stats.1': 'años en negocios y cuentas clave',
+    'stats.1n': 'De principio a fin',
+    'stats.1': 'frontend, backend e infraestructura',
     'stats.2n': 'Verificada por Meta',
     'stats.2': 'app de Tech Provider de WhatsApp',
     'stats.3': 'bilingüe, listo para remoto',
@@ -88,8 +89,8 @@ const ES = {
 };
 
 const TITLES = {
-    en: 'Daniel Zuluaga | Developer & AI Builder',
-    es: 'Daniel Zuluaga | Desarrollador y AI Builder'
+    en: 'Daniel Zuluaga | Full-Stack Developer',
+    es: 'Daniel Zuluaga | Desarrollador Full-Stack'
 };
 
 /* ------------------------------------------------------------------ */
