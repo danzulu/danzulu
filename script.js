@@ -47,7 +47,7 @@ const ES = {
     'dec.4': 'Construido sobre la WhatsApp Cloud API de Meta con Embedded Signup, detrás de un WhatsAppProvider interno y un registro de plantillas.',
     'dec.5t': 'Alcance seguro por diseño',
     'dec.5': 'Devoluciones y Reclamos coteja la evidencia con la política de devoluciones antes de aprobar. Las citas revalidan la disponibilidad justo antes de confirmar.',
-    'dec.6t': 'Núcleo genérico, capa a medida encima',
+    'dec.6t': 'Núcleo genérico con capa a medida',
     'dec.6': 'Productos estandarizados para ir rápido, más desarrollo a medida para necesidades especializadas, todo desde una plataforma reutilizable.',
 
     'arch.1': 'Cliente',
@@ -85,7 +85,6 @@ const ES = {
     'skills.g2': 'Full-stack',
     'skills.g3': 'Flujo de trabajo',
     'skills.t1': 'Diseño de agentes',
-    'skills.t2': 'Automatización con n8n',
     'skills.t3': 'Desarrollo guiado por pruebas (TDD)',
 
     'contact.h2': 'Construyamos algo juntos',
