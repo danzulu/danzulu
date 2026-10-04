@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20261003">
+    <link rel="stylesheet" href="styles.css?v=20261004">
 </head>
 
 <body>
@@ -43,7 +43,7 @@
     <div class="background-glow"></div>
 
     <header class="navbar">
-        <a class="logo" href="#home" aria-label="Daniel Zuluaga - home">DZ</a>
+        <a class="logo" translate="no" href="#home" aria-label="Daniel Zuluaga - home">DZ</a>
         <nav aria-label="Main">
             <ul>
                 <li><a href="#flagship" data-i18n="nav.flagship">Projects</a></li>
@@ -62,7 +62,7 @@
         <section id="home" class="hero">
             <div class="hero-content">
                 <span class="chip"><span class="dot"></span><span data-i18n="hero.chip">Open to 100% remote roles</span></span>
-                <h1>Daniel Zuluaga Vélez</h1>
+                <h1 translate="no">Daniel Zuluaga Vélez</h1>
                 <p class="subtitle" data-i18n="hero.role">Full-Stack Developer</p>
                 <p class="tagline" data-i18n="hero.tagline">I build software that powers businesses.</p>
                 <p class="bio lead" data-i18n="hero.bio1" data-i18n-html>I'm a full-stack developer who builds <strong>production-ready software</strong> end to end, from <strong>web applications and APIs</strong> to <strong>automations and AI-powered systems</strong>, covering architecture, databases and deployment with a focus on <strong>clean code, testing</strong> and solving real business problems.</p>
@@ -103,7 +103,7 @@
                     <div class="demo-head">
                         <div>
                             <h4 data-i18n="demo.h">See the worker in action</h4>
-                            <p class="demo-note" data-i18n="demo.note">Simulated conversations that mirror how the worker behaves. Watch the agent trace on the right.</p>
+                            <p class="demo-note" data-i18n="demo.note">Simulated conversations that mirror how the worker behaves. Follow each step in the agent trace.</p>
                         </div>
                         <div class="demo-tabs" role="tablist" aria-label="Demo scenarios">
                             <button type="button" role="tab" class="active" data-scn="booking" aria-selected="true" data-i18n="demo.t1">Room booking</button>
@@ -137,7 +137,7 @@
                 <ul class="highlights decision-list">
                     <li><svg class="ico"><use href="#i-check" /></svg><span><strong data-i18n="dec.1t">Escalates only when truly needed</strong> <span data-i18n="dec.1">The agent resolves requests end to end within business policy. Only what falls outside it goes to a person, with the full context attached.</span></span></li>
                     <li><svg class="ico"><use href="#i-check" /></svg><span><strong data-i18n="dec.2t">Tenant isolation</strong> <span data-i18n="dec.2">Each business's data, configuration and conversations are isolated, so one worker can safely serve many clients.</span></span></li>
-                    <li><svg class="ico"><use href="#i-check" /></svg><span><strong data-i18n="dec.3t">Private Control Plane</strong> <span data-i18n="dec.3">A private control plane to configure each deployment and review conversations, kept apart from the customer-facing runtime.</span></span></li>
+                    <li><svg class="ico"><use href="#i-check" /></svg><span><strong data-i18n="dec.3t">Private control plane</strong> <span data-i18n="dec.3">A private control plane to configure each deployment and review conversations, kept apart from the customer-facing runtime.</span></span></li>
                     <li><svg class="ico"><use href="#i-check" /></svg><span><strong data-i18n="dec.4t">WhatsApp-first, direct to Meta</strong> <span data-i18n="dec.4">Built on the Meta WhatsApp Cloud API with Embedded Signup, behind an internal WhatsAppProvider and a template registry.</span></span></li>
                     <li><svg class="ico"><use href="#i-check" /></svg><span><strong data-i18n="dec.5t">Safe scope by design</strong> <span data-i18n="dec.5">Returns &amp; Claims checks evidence against the return policy before approving. Appointments re-check availability right before confirming.</span></span></li>
                     <li><svg class="ico"><use href="#i-check" /></svg><span><strong data-i18n="dec.6t">Generic core, custom on top</strong> <span data-i18n="dec.6">Standardized products for speed, plus custom development for specialized needs, from one reusable platform.</span></span></li>
@@ -180,7 +180,7 @@
                     <li><svg class="ico"><use href="#i-check" /></svg><span data-i18n="web.hl.1">Ubuntu VPS provisioned and hardened from scratch</span></li>
                     <li><svg class="ico"><use href="#i-check" /></svg><span data-i18n="web.hl.2">Automated SSL with Let's Encrypt and Certbot</span></li>
                     <li><svg class="ico"><use href="#i-check" /></svg><span data-i18n="web.hl.3">Cloudflare DNS, CDN and proxy in front of Nginx</span></li>
-                    <li><svg class="ico"><use href="#i-check" /></svg><span data-i18n="web.hl.4">SEO and indexing in Google and Bing</span></li>
+                    <li><svg class="ico"><use href="#i-check" /></svg><span data-i18n="web.hl.4">SEO and indexing on Google and Bing</span></li>
                 </ul>
 
                 <div class="scores" aria-label="Lighthouse scores">
@@ -189,14 +189,14 @@
                     <div class="score"><strong>100</strong><span data-i18n="web.sc.3">Best Practices</span></div>
                     <div class="score"><strong>100</strong><span>SEO</span></div>
                 </div>
-                <p class="scores-note" data-i18n="web.sc.note">Lighthouse via PageSpeed Insights on desktop, Sep 2026. On mobile: 95 performance, 100 in the rest.</p>
+                <p class="scores-note" data-i18n="web.sc.note">Lighthouse via PageSpeed Insights on desktop, Sep 2026. On mobile: 95 for performance and 100 on everything else.</p>
 
                 <div class="tags">
                     <span>Next.js 16</span><span>React 19</span><span>TypeScript</span><span>Nginx</span><span>PM2</span><span>Ubuntu 24.04</span><span>Cloudflare</span><span>Hostinger VPS</span>
                 </div>
 
                 <div class="project-foot">
-                    <span class="role-label"><span data-i18n="web.role">My role</span>: Full-Stack · DevOps · Deployment</span>
+                    <span class="role-label"><span data-i18n="web.role">My role</span>: <span data-i18n="web.roleVal">Full-Stack · DevOps · Deployment</span></span>
                     <a class="link-btn" href="https://www.zuvel.ai" target="_blank" rel="noopener"><svg class="ico"><use href="#i-arrow" /></svg><span data-i18n="web.link">Visit zuvel.ai</span></a>
                 </div>
             </article>
@@ -206,7 +206,7 @@
                 <span class="eyebrow" data-i18n="sh.eyebrow">Personal project · AI learning</span>
                 <h3>Study Hub</h3>
                 <p class="flagship-sub" data-i18n="sh.sub">My AI learning path, organized and tracked</p>
-                <p class="flagship-desc" data-i18n="sh.desc">A personal study platform to organize and follow my learning path in Artificial Intelligence, with structured content, progress tracking and local persistence.</p>
+                <p class="flagship-desc" data-i18n="sh.desc">A personal study platform to organize and follow my learning path in artificial intelligence, with structured content, progress tracking and local persistence.</p>
 
                 <p class="sh-try" data-i18n="sh.try">Try it: switch tabs, open a lesson and mark it complete.</p>
                 <div class="sh-demo" id="shDemo">
@@ -238,7 +238,7 @@
                 </div>
 
                 <div class="project-foot">
-                    <span class="role-label"><span data-i18n="web.role">My role</span>: Full-Stack · Database Design · Product Development</span>
+                    <span class="role-label"><span data-i18n="web.role">My role</span>: <span data-i18n="sh.roleVal">Full-Stack · Database Design · Product Development</span></span>
                 </div>
             </article>
         </section>
@@ -252,7 +252,7 @@
             <div class="skills-groups">
                 <div class="skill-group">
                     <h5 data-i18n="skills.g1">AI &amp; Agents</h5>
-                    <div class="tags"><span>OpenAI Agents SDK</span><span>Agent design</span><span>n8n automation</span><span>WhatsApp Cloud API</span></div>
+                    <div class="tags"><span>OpenAI Agents SDK</span><span data-i18n="skills.t1">Agent design</span><span>WhatsApp Cloud API</span></div>
                 </div>
                 <div class="skill-group">
                     <h5 data-i18n="skills.g2">Full-stack</h5>
@@ -260,7 +260,7 @@
                 </div>
                 <div class="skill-group">
                     <h5 data-i18n="skills.g3">Workflow</h5>
-                    <div class="tags"><span>Claude Code</span><span>Codex CLI</span><span>Test-driven development</span><span>Nginx · PM2</span><span>Cloudflare</span><span>Linux VPS</span></div>
+                    <div class="tags"><span>Claude Code</span><span>Codex CLI</span><span data-i18n="skills.t3">Test-driven development</span><span>Nginx · PM2</span><span>Cloudflare</span><span>Linux VPS</span></div>
                 </div>
             </div>
         </section>
@@ -287,9 +287,9 @@
 
     <a href="#home" class="to-top" id="toTop"><svg class="ico" aria-hidden="true"><use href="#i-up" /></svg><span class="sr-only" data-i18n="toTop">Back to top</span></a>
 
-    <script src="script.js?v=20261003"></script>
-    <script src="studyhub-demo.js?v=20261003"></script>
-    <script src="zuvel-site-demo.js?v=20261003"></script>
+    <script src="script.js?v=20261004"></script>
+    <script src="studyhub-demo.js?v=20261004"></script>
+    <script src="zuvel-site-demo.js?v=20261004"></script>
 </body>
 
 </html>
