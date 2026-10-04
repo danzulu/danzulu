@@ -6,7 +6,7 @@ const ES = {
     'nav.skills': 'Habilidades',
     'nav.contact': 'Contacto',
 
-    'hero.chip': 'Disponible para roles 100% remotos',
+    'hero.chip': 'Disponible para roles 100 % remotos',
     'hero.role': 'Desarrollador Full-Stack',
     'hero.tagline': 'Construyo software que impulsa negocios.',
     'hero.bio1': 'Soy desarrollador full-stack y construyo <strong>software listo para producción</strong> de principio a fin, desde <strong>aplicaciones web y APIs</strong> hasta <strong>automatizaciones y sistemas con IA</strong>, cubriendo arquitectura, bases de datos y despliegue con foco en <strong>código limpio, pruebas</strong> y en resolver problemas reales de negocio.',
@@ -17,37 +17,37 @@ const ES = {
     'stats.1': 'frontend, backend e infraestructura',
     'stats.2n': 'Verificada por Meta',
     'stats.2': 'app de Tech Provider de WhatsApp',
-    'stats.3': 'bilingüe, listo para remoto',
+    'stats.3': 'bilingüe, listo para trabajo remoto',
 
     'flag.h2': 'Proyectos',
     'flag.eyebrow': 'Insignia · ZUVEL',
     'flag.sub': 'AI Worker de Servicio al Cliente',
-    'flag.desc': 'Una plataforma para llevar a producción agentes de IA reutilizables para empresas. El Worker de Servicio al Cliente es un producto terminado y listo para usar en WhatsApp: atiende clientes, reserva habitaciones y citas, resuelve devoluciones y reclamos, y escala a una persona solo cuando realmente hace falta. Es genérico por diseño, así que se puede implementar en cualquier negocio, y ya fue implementado para un hotel.',
+    'flag.desc': 'Una plataforma para llevar a producción agentes de IA reutilizables para empresas. El Worker de Servicio al Cliente es un producto terminado y listo para usar en WhatsApp: atiende a clientes, reserva habitaciones y citas, resuelve devoluciones y reclamos, y escala a una persona solo cuando realmente hace falta. Es genérico por diseño, así que se puede desplegar en cualquier negocio, y ya está implementado en un hotel.',
     'flag.link1': 'Visitar zuvel.ai',
     'flag.link2': 'Solicitar una demo guiada',
 
     'demo.h': 'Mira al worker en acción',
-    'demo.note': 'Conversaciones simuladas que reflejan cómo se comporta el worker. Mira el registro del agente a la derecha.',
+    'demo.note': 'Conversaciones simuladas que reflejan cómo se comporta el worker. Sigue cada paso en el registro del agente.',
     'demo.t1': 'Reserva de habitación',
     'demo.t2': 'Cita',
     'demo.t3': 'Devolución y reclamo',
     'demo.online': 'AI Worker · en línea',
     'demo.trace': 'Registro del agente',
     'demo.replay': 'Repetir',
-    'demo.traceEmpty': 'Las llamadas a herramientas, validaciones de políticas y acciones aparecen aquí mientras corre la conversación.',
+    'demo.traceEmpty': 'Las llamadas a herramientas, validaciones de políticas y acciones aparecen aquí mientras avanza la conversación.',
 
     'dec.h': 'Decisiones de ingeniería detrás del producto',
     'dec.1t': 'Escala solo cuando realmente hace falta',
     'dec.1': 'El agente resuelve las solicitudes de principio a fin dentro de las políticas del negocio. Solo lo que queda por fuera pasa a una persona, con el contexto completo.',
     'dec.2t': 'Aislamiento por tenant',
-    'dec.2': 'Los datos, la configuración y las conversaciones de cada negocio están aislados, así un mismo worker atiende a muchos clientes con seguridad.',
-    'dec.3t': 'Control Plane privado',
+    'dec.2': 'Los datos, la configuración y las conversaciones de cada negocio están aislados, por lo que un mismo worker puede atender de forma segura a muchos clientes.',
+    'dec.3t': 'Plano de control privado',
     'dec.3': 'Un plano de control privado para configurar cada despliegue y revisar conversaciones, separado del runtime que ve el cliente.',
     'dec.4t': 'WhatsApp primero, directo con Meta',
     'dec.4': 'Construido sobre la WhatsApp Cloud API de Meta con Embedded Signup, detrás de un WhatsAppProvider interno y un registro de plantillas.',
     'dec.5t': 'Alcance seguro por diseño',
-    'dec.5': 'Devoluciones y Reclamos valida la evidencia contra la política de devoluciones antes de aprobar. Las citas revalidan la disponibilidad justo antes de confirmar.',
-    'dec.6t': 'Núcleo genérico, a medida encima',
+    'dec.5': 'Devoluciones y Reclamos coteja la evidencia con la política de devoluciones antes de aprobar. Las citas revalidan la disponibilidad justo antes de confirmar.',
+    'dec.6t': 'Núcleo genérico, capa a medida encima',
     'dec.6': 'Productos estandarizados para ir rápido, más desarrollo a medida para necesidades especializadas, todo desde una plataforma reutilizable.',
 
     'arch.1': 'Cliente',
@@ -64,24 +64,29 @@ const ES = {
     'web.sc.1': 'Rendimiento',
     'web.sc.2': 'Accesibilidad',
     'web.sc.3': 'Buenas prácticas',
-    'web.sc.note': 'Lighthouse con PageSpeed Insights en escritorio, sep. 2026. En móvil: 95 en rendimiento y 100 en el resto.',
+    'web.sc.note': 'Lighthouse con PageSpeed Insights en escritorio, sept. 2026. En móvil: 95 en rendimiento y 100 en el resto.',
     'web.role': 'Mi rol',
+    'web.roleVal': 'Full-Stack · DevOps · Despliegue',
     'web.link': 'Visitar zuvel.ai',
     'web.try': 'Recorre las páginas del sitio en vivo. Cambia el idioma del portafolio para verlo en español o en inglés.',
 
     'sh.eyebrow': 'Proyecto personal · aprendizaje en IA',
     'sh.sub': 'Mi ruta de aprendizaje en IA, organizada y medida',
-    'sh.desc': 'Una plataforma personal de estudio para organizar y seguir mi ruta de aprendizaje en Inteligencia Artificial, con contenido estructurado, seguimiento de progreso y persistencia local.',
+    'sh.desc': 'Una plataforma personal de estudio para organizar y seguir mi ruta de aprendizaje en inteligencia artificial, con contenido estructurado, seguimiento de progreso y persistencia local.',
     'sh.try': 'Pruébalo: cambia de pestaña, abre una lección y márcala como completada.',
     'sh.hl.1': 'Lecciones estructuradas escritas en MDX y Markdown',
     'sh.hl.2': 'Seguimiento de progreso guardado en una base SQLite local',
     'sh.hl.3': 'Esquema tipado con Drizzle ORM y migraciones con Drizzle Kit',
+    'sh.roleVal': 'Full-Stack · Diseño de bases de datos · Desarrollo de producto',
     'sh.hl.4': 'Local-first: corre sobre better-sqlite3, sin servicios externos',
 
     'skills.h2': 'Habilidades técnicas',
-    'skills.g1': 'IA y Agentes',
+    'skills.g1': 'IA y agentes',
     'skills.g2': 'Full-stack',
     'skills.g3': 'Flujo de trabajo',
+    'skills.t1': 'Diseño de agentes',
+    'skills.t2': 'Automatización con n8n',
+    'skills.t3': 'Desarrollo guiado por pruebas (TDD)',
 
     'contact.h2': 'Construyamos algo juntos',
     'contact.p': 'Disponible para roles remotos de desarrollo e ingeniería de IA. Si quieres ver AI Workers en acción o conversar sobre tu equipo, escríbeme.',
@@ -100,7 +105,7 @@ const TITLES = {
 /* ------------------------------------------------------------------ */
 const SCENARIOS = {
     booking: {
-        name: { en: 'Hotel Concierge', es: 'Concierge del Hotel' },
+        name: { en: 'Hotel Concierge', es: 'Concierge del hotel' },
         steps: [
             {
                 who: 'user',
@@ -111,7 +116,7 @@ const SCENARIOS = {
                 who: 'agent',
                 trace: ['TOOL', 'booking.check_availability(check_in="Oct 12", check_out="Oct 14", guests=2) → 2 room types'],
                 en: 'Hi! Yes. For Oct 12–14 I have a Deluxe King at $95/night and a Suite with balcony at $130/night. Which would you like?',
-                es: '¡Hola! Sí. Del 12 al 14 de octubre tengo una Deluxe King a $95 por noche y una Suite con balcón a $130 por noche. ¿Cuál prefieres?'
+                es: '¡Hola! Sí. Del 12 al 14 de octubre tengo una Deluxe King a US$95 por noche y una Suite con balcón a US$130 por noche. ¿Cuál prefieres?'
             },
             {
                 who: 'user',
@@ -122,17 +127,17 @@ const SCENARIOS = {
                 who: 'agent',
                 trace: ['KB', 'knowledge.lookup(topic="breakfast") → included, 6:30–10:00'],
                 en: 'Yes, breakfast is included, served 6:30 to 10:00. Total for 2 nights: $190. To hold it I just need your full name and email.',
-                es: 'Sí, el desayuno está incluido, de 6:30 a 10:00. Total por 2 noches: $190. Para reservarla solo necesito tu nombre completo y correo.'
+                es: 'Sí, el desayuno está incluido, de 6:30 a 10:00. Total por 2 noches: US$190. Para reservarla solo necesito tu nombre completo y correo.'
             },
             {
                 who: 'user',
-                en: 'Sofia Martínez, sofia@example.com',
+                en: 'Sofía Martínez, sofia@example.com',
                 es: 'Sofía Martínez, sofia@example.com'
             },
             {
                 who: 'agent',
-                trace: ['TOOL', 'booking.create_reservation(room="Deluxe King", nights=2, guest="Sofia Martínez") → #A-4821 confirmed'],
-                en: 'All set, Sofia! Reservation #A-4821 is confirmed: Deluxe King, Oct 12–14. I sent the details to your email. Anything else?',
+                trace: ['TOOL', 'booking.create_reservation(room="Deluxe King", nights=2, guest="Sofía Martínez") → #A-4821 confirmed'],
+                en: 'All set, Sofía! Reservation #A-4821 is confirmed: Deluxe King, Oct 12–14. I sent the details to your email. Anything else?',
                 es: '¡Listo, Sofía! La reserva #A-4821 está confirmada: Deluxe King, del 12 al 14 de octubre. Te envié los detalles por correo. ¿Algo más?'
             },
             {
@@ -142,7 +147,7 @@ const SCENARIOS = {
             },
             {
                 who: 'agent',
-                trace: ['KB', 'policy.late_checkout → free until 1:00 PM if the room is not booked next day'],
+                trace: ['KB', 'policy.late_checkout → free until 1:00 PM if the room is not booked the next day'],
                 en: 'Let me check that for you.',
                 es: 'Déjame revisarlo.'
             },
@@ -150,7 +155,7 @@ const SCENARIOS = {
                 who: 'agent',
                 trace: ['TOOL', 'booking.check_next_day(room="Deluxe King", date="Oct 14") → free · booking.update(#A-4821, check_out="1:00 PM")'],
                 en: 'Good news: your room is free the next day, so I added a late check-out until 1:00 PM at no extra cost. It\'s already on reservation #A-4821.',
-                es: 'Buenas noticias: tu habitación está libre el día siguiente, así que te agregué check-out tarde hasta la 1:00 PM sin costo adicional. Ya quedó en la reserva #A-4821.'
+                es: 'Buenas noticias: tu habitación está libre el día siguiente, así que te agregué check-out tarde hasta la 1:00 p. m. sin costo adicional. Ya quedó en la reserva #A-4821.'
             },
             {
                 who: 'sys',
@@ -178,18 +183,18 @@ const SCENARIOS = {
                 who: 'agent',
                 trace: ['TOOL', 'appointments.check_availability(service="haircut", date="Fri", window="pm") → 3:00 PM, 4:30 PM'],
                 en: 'I have 3:00 PM or 4:30 PM available. Which works better?',
-                es: 'Tengo disponible a las 3:00 PM o a las 4:30 PM. ¿Cuál te sirve más?'
+                es: 'Tengo disponibilidad a las 3:00 p. m. o a las 4:30 p. m. ¿Cuál te sirve más?'
             },
             {
                 who: 'user',
-                en: '4:30 please.',
+                en: '4:30, please.',
                 es: 'A las 4:30, por favor.'
             },
             {
                 who: 'agent',
                 trace: ['TOOL', 'appointments.revalidate_slot("4:30 PM") → still free · appointments.create() → #C-1093 confirmed'],
                 en: 'Done! Your haircut is confirmed for Friday at 4:30 PM (#C-1093). I double-checked the slot right before booking.',
-                es: '¡Listo! Tu corte quedó confirmado para el viernes a las 4:30 PM (#C-1093). Verifiqué el horario justo antes de reservar.'
+                es: '¡Listo! Tu corte quedó confirmado para el viernes a las 4:30 p. m. (#C-1093). Verifiqué el horario justo antes de reservar.'
             },
             {
                 who: 'agent',
@@ -212,7 +217,7 @@ const SCENARIOS = {
                 who: 'agent',
                 trace: ['TOOL', 'orders.lookup(order="#10453") → delivered 6 days ago · within return window'],
                 en: 'Sorry about that! Your order is within the return window. Could you send a photo of the jacket with its tag?',
-                es: '¡Lamento eso! Tu pedido está dentro del plazo de devolución. ¿Puedes enviarme una foto de la chaqueta con su etiqueta?'
+                es: '¡Lo siento mucho! Tu pedido está dentro del plazo de devolución. ¿Puedes enviarme una foto de la chaqueta con su etiqueta?'
             },
             {
                 who: 'user',
@@ -279,7 +284,6 @@ function applyLang(next) {
     document.querySelectorAll('.lang-toggle button').forEach(b => {
         b.setAttribute('aria-pressed', String(b.dataset.lang === next));
     });
-    safeSet('dz-lang', next);
     demo.relocalize();
 }
 
@@ -389,14 +393,23 @@ const demo = (() => {
 document.addEventListener('DOMContentLoaded', () => {
     captureEnglish();
 
-    // Language: ?lang= param > saved choice > English default
+    // Language: ?lang= param > visitor's own choice > browser language > English.
+    // Opening in Spanish for Spanish browsers keeps them from machine-translating
+    // the English copy. Only an explicit click is saved, under a new key, so the
+    // old default 'en' written to 'dz-lang' on earlier visits is ignored.
     const param = new URLSearchParams(location.search).get('lang');
-    const saved = safeGet('dz-lang');
-    const initial = ['en', 'es'].includes(param) ? param : (['en', 'es'].includes(saved) ? saved : 'en');
+    const saved = safeGet('dz-lang-choice');
+    const browserLang = ((navigator.languages && navigator.languages[0]) || navigator.language || '')
+        .toLowerCase().startsWith('es') ? 'es' : 'en';
+    const initial = ['en', 'es'].includes(param) ? param
+        : ['en', 'es'].includes(saved) ? saved : browserLang;
     applyLang(initial);
 
     document.querySelectorAll('.lang-toggle button').forEach(btn => {
-        btn.addEventListener('click', () => applyLang(btn.dataset.lang));
+        btn.addEventListener('click', () => {
+            applyLang(btn.dataset.lang);
+            safeSet('dz-lang-choice', btn.dataset.lang);
+        });
     });
 
     // Smooth scrolling for in-page links
